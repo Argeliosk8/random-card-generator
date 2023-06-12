@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Card Generator</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="formSizeEditor" id="sizeEditor">
-        <label>Width:</label>
-        <input id="heightInput" type="number" step="50"></input>
-        <label>Height:</label>
-        <input id="widthInput" type="number" step="50"></input>
-        <button class="sizeButton" onclick="changeCardSize()">Change!</button>
+    <div class="formSizeEditor" id="sizeEditor">        
+        <div>
+            <label>Height:</label>            
+            <input id="heightInput" type="number" step="50"></input>
+            <button class="cleanButton" onclick="cleanHeightInput()"><span class="material-symbols-outlined">mop</span></button>
+            
+        </div>
+        <div>
+            <label>Width:</label>
+            <input id="widthInput" type="number" step="50"></input>
+            <button class="cleanButton" onclick="cleanWidhtInput()"><span class="material-symbols-outlined">mop</span></button>            
+        </div>      
+       <button class="sizeButton" onclick="changeCardSize()">Change!</button>        
     </div> 
     <div class="card" id="card">
         <div class="topSimbol"><p class="spade" id="firstSymbol">♦</p></div>

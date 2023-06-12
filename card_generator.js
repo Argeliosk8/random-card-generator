@@ -44,4 +44,12 @@ function changeCardSize(){
     }
 }
 
+function cleanHeightInput(){
+    heightInput.value = null
+}
+
+function cleanWidhtInput() {
+    widthInput.value = null
+}
+
 setInterval(renderRandomCard, 3000)
