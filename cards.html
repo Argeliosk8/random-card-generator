@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div class="card">
+    <div class="formSizeEditor" id="sizeEditor">
+        <label>Width:</label>
+        <input id="heightInput"></input>
+        <label>Height:</label>
+        <input id="widthInput"></input>
+        <button class="sizeButton" onclick="changeCardSize()">Change!</button>
+    </div> 
+    <div class="card" id="card">
         <div class="topSimbol"><p class="spade" id="firstSymbol">♦</p></div>
         <div class="number"><p id="cardNumber">10</p></div>
         <div class="bottomSimbol"><p class="spade" id="secondSymbol">♦</p></div>
-    </div>    
+    </div>   
+    
 
 <script src="card_generator.js"></script>
 </body>

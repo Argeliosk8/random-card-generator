@@ -35,10 +35,15 @@ body {
     align-items: center;
   }
 
-  .number p {
+ .number p {
     font-size: 80px;
   }
-  
+
+.rednumber p {
+  font-size: 80px;
+  color: red;
+}
+
   .bottomSimbol {
     width: 100%;
     height: 20%;
@@ -67,5 +72,30 @@ body {
   .diamond {
     padding: 10px 10px;
     font-size: 80px;
+    color: red;
   }
   
+  .formSizeEditor {
+    background-color: whitesmoke;
+    position: absolute;
+    height: 200px;
+    width: 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    left: 80px;
+  }
+
+  .formSizeEditor input {
+    width: 80px;
+    height: 25px;
+  }
+
+  .sizeButton {
+    height: 30px;
+    width: 70px;
+  }
