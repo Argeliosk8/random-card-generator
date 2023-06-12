@@ -99,3 +99,7 @@ body {
     height: 30px;
     width: 70px;
   }
+
+  input[type=number]{
+    text-align: center;
+  }
